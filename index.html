@@ -11,7 +11,7 @@
     <button id="checkout-button">Checkout</button>
 
     <script>
-        const stripe = Stripe("pk_live_51Oeh3xHYZJ2Y4LpDPVqXfUamO4FgIEY3pzspFmdtMdRQh1AR1OHcEdXSxQUCbx1dxCyH1Tz9X9ntz8ds15cOZ8A5006L1zl4TF");
+        const stripe = Stripe("pk_live_51Oeh3xHYZJ2Y4LpDPVqXfUamO4FgIEY3pzspFmdtMdRQh1AR1OHcEdXSxQUCbx1dxCyH1Tz9X9ntz8ds15cOZ8A5006L1zl4TF"); 
 
         document.getElementById("checkout-button").addEventListener("click", async () => {
             const response = await fetch("http://localhost:3000/create-checkout-session", { method: "POST" });

@@ -24,8 +24,8 @@ app.post("/create-checkout-session", async (req, res) => {
                 },
             ],
             mode: "payment",
-            success_url: "https://github.com/conrado44/conrado44.github.io",
-            cancel_url: "https://github.com/conrado44/conrado44.github.io",
+            success_url: "https://conrado44.github.io/",
+            cancel_url: "https://conrado44.github.io/",
         });
 
         res.json({ id: session.id });
